@@ -1,0 +1,48 @@
+/* General image styling */
+.product-article img {
+    width: 50%;  /* The image takes up 100% of the container width */
+    height: auto;  /* Maintain the aspect ratio */
+    max-width: 90%;  /* Restrict the image to 90% of the container width */
+    border: none;
+    border-radius: 5px;
+    object-fit: contain;  /* Maintain the aspect ratio and avoid stretching */
+    margin: 0 auto;  /* Center the image */
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .product-article img {
+      max-width: 50%;  /* Ensure the image fits the container on smaller screens */
+    }
+  }
+  
+  /* Media Query for very small screens (mobile devices) */
+  @media (max-width: 480px) {
+    .product-article img {
+      max-width: 100%;  /* Remove any width restrictions for even smaller screens */
+    }
+  }
+  /* Full-screen loader styles */
+.loader-overlay {
+  
+ 
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.loader-spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #000000;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
